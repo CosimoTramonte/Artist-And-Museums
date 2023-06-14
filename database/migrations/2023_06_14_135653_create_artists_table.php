@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('slug', 60)->unique();
             $table->string('type', 50);
             $table->date('date_of_birth');
-            $table->tinyInteger('number_of_works');
+            $table->tinyInteger('number_of_works')->unsigned();
             $table->text('description')->nullable();
             $table->text('main_works');
             $table->timestamps();
