@@ -19,10 +19,10 @@ return new class extends Migration
             $table->string('slug', 100);
             $table->string('address');
             $table->string('city', 100);
-            $table->tinyInteger('zip_code');
+            $table->mediumInteger('zip_code');
             $table->date('open_date');
-            $table->timestamp('open_hour');
-            $table->timestamp('close_hour');
+            $table->time('open_hour');
+            $table->time('close_hour');
             $table->string('geographic_cordinates');
             $table->timestamps();
         });
